@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-07T02:37:56.959318+00:00",
+  "host": "127.0.0.1",
+  "resolved_ip": "127.0.0.1",
+  "port": 5173,
+  "path": "/",
+  "duration": 60,
+  "concurrency": 4,
+  "requested_rps": 6,
+  "elapsed_seconds": 61.96900000000005,
+  "total": 216,
+  "successful": 115,
+  "status_counts": {
+    "200": 115,
+    "000": 101
+  },
+  "achieved_rps": 3.4856137746292473,
+  "success_percent": 53.24074074074074,
+  "p95_ms": 2016.0000000000764,
+  "interrupted": false
+}

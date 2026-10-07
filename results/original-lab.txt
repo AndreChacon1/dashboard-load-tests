@@ -1,0 +1,29 @@
+=== Bounded HTTP lab test: 8 workers, up to 20 requests/s, 10s per target; targets run sequentially ===
+
+--- Target: victim-protected (8 workers, 20 requests/s max, 10s) ---
+  [02:43:57] requests so far for victim-protected: total=59 ok(200)=59 blocked/failed=0
+  [02:44:00] requests so far for victim-protected: total=80 ok(200)=68 blocked/failed=12
+  [02:44:03] requests so far for victim-protected: total=93 ok(200)=68 blocked/failed=25
+  [02:44:04] requests so far for victim-protected: total=96 ok(200)=68 blocked/failed=28
+  RESULT for victim-protected: total=104 ok(200)=68 blocked/failed=36
+  -> 34% of responses were non-200
+
+--- Target: victim-unprotected (8 workers, 20 requests/s max, 10s) ---
+  [02:44:09] requests so far for victim-unprotected: total=59 ok(200)=59 blocked/failed=0
+  [02:44:12] requests so far for victim-unprotected: total=119 ok(200)=119 blocked/failed=0
+  [02:44:15] requests so far for victim-unprotected: total=179 ok(200)=179 blocked/failed=0
+  [02:44:16] requests so far for victim-unprotected: total=199 ok(200)=199 blocked/failed=0
+  RESULT for victim-unprotected: total=199 ok(200)=199 blocked/failed=0
+  -> 0% of responses were non-200
+
+=== Test finished; only the configured lab targets were contacted. ===
+A non-200 result can be a ban, an HTTP error, or a connection timeout.
+Status for the jail: http-flood
+|- Filter
+|  |- Currently failed:	1
+|  |- Total failed:	70
+|  `- File list:	/var/log/nginx/access.log
+`- Actions
+   |- Currently banned:	1
+   |- Total banned:	1
+   `- Banned IP list:	172.29.0.20

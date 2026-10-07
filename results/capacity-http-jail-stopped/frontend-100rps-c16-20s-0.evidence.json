@@ -1,0 +1,18 @@
+{
+  "jail_stopped": true,
+  "observer_status": "200",
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 7121,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-07T02:30:45.077311042Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "stats": "{\"BlockIO\":\"7.11MB / 643kB\",\"CPUPerc\":\"0.00%\",\"Container\":\"dashboard-frontend-frontend-1\",\"ID\":\"32182b784b7f\",\"MemPerc\":\"0.40%\",\"MemUsage\":\"29.66MiB / 7.332GiB\",\"Name\":\"dashboard-frontend-frontend-1\",\"NetIO\":\"1.85MB / 3.81MB\",\"PIDs\":\"23\"}\n"
+}

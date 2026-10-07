@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-07T02:36:41.791048+00:00",
+  "host": "127.0.0.1",
+  "resolved_ip": "127.0.0.1",
+  "port": 3001,
+  "path": "/health",
+  "duration": 20,
+  "concurrency": 4,
+  "requested_rps": 6,
+  "elapsed_seconds": 20.0,
+  "total": 120,
+  "successful": 117,
+  "status_counts": {
+    "200": 117,
+    "000": 3
+  },
+  "achieved_rps": 6.0,
+  "success_percent": 97.5,
+  "p95_ms": 16.000000000076398,
+  "interrupted": false
+}

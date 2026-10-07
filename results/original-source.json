@@ -1,0 +1,6 @@
+{
+  "archive": "fail2ban-ddos.zip",
+  "archive_sha256": "402de74a027c9b36d5d19e67c86ae252df865cb85b296ba9f1053eb5af75d3df",
+  "script_sha256": "48189b9442150d04c1771d83df3cf57eed3048536e2f44dba7fe17cca9d35434",
+  "copy_identical": true
+}

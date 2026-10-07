@@ -1,0 +1,18 @@
+{
+  "before": {
+    "jail": "Status for the jail: http-flood\n|- Filter\n|  |- Currently failed:\t1\n|  |- Total failed:\t483\n|  `- File list:\t/var/log/nginx/access.log\n`- Actions\n   |- Currently banned:\t0\n   |- Total banned:\t1\n   `- Banned IP list:\t\n",
+    "firewall": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n-N f2b-http-flood\n-N f2b-ldaps-connections\n-A INPUT -p tcp -m multiport --dports 80 -j f2b-http-flood\n-A INPUT -p tcp -m multiport --dports 636 -j f2b-ldaps-connections\n-A f2b-http-flood -j RETURN\n-A f2b-ldaps-connections -j RETURN\n",
+    "running": true,
+    "started_at": "2026-10-07T02:33:12.281947955Z",
+    "restart_count": 0,
+    "observer_status": "200"
+  },
+  "after": {
+    "jail": "Status for the jail: http-flood\n|- Filter\n|  |- Currently failed:\t1\n|  |- Total failed:\t784\n|  `- File list:\t/var/log/nginx/access.log\n`- Actions\n   |- Currently banned:\t0\n   |- Total banned:\t1\n   `- Banned IP list:\t\n",
+    "firewall": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n-N f2b-http-flood\n-N f2b-ldaps-connections\n-A INPUT -p tcp -m multiport --dports 80 -j f2b-http-flood\n-A INPUT -p tcp -m multiport --dports 636 -j f2b-ldaps-connections\n-A f2b-http-flood -j RETURN\n-A f2b-ldaps-connections -j RETURN\n",
+    "running": true,
+    "started_at": "2026-10-07T02:33:12.281947955Z",
+    "restart_count": 0,
+    "observer_status": "200"
+  }
+}

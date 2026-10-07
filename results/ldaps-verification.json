@@ -1,0 +1,178 @@
+{
+  "baseline": {
+    "ok": true,
+    "tls_version": "TLSv1.2"
+  },
+  "certificate_hostname": "openldap",
+  "attempts": [
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    },
+    {
+      "ok": true,
+      "tls_version": "TLSv1.2"
+    }
+  ],
+  "blocked_probe": {
+    "ok": false,
+    "error": "SSLEOFError",
+    "detail": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)"
+  },
+  "jail": "Status for the jail: ldaps-connections\n|- Filter\n|  |- Currently failed:\t1\n|  |- Total failed:\t41\n|  `- File list:\t/var/log/nginx/ldaps.log\n`- Actions\n   |- Currently banned:\t1\n   |- Total banned:\t1\n   `- Banned IP list:\t172.23.0.1\n",
+  "firewall": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n-N f2b-ldaps-connections\n-A INPUT -p tcp -m multiport --dports 636 -j f2b-ldaps-connections\n-A f2b-ldaps-connections -s 172.23.0.1/32 -j REJECT --reject-with icmp-port-unreachable\n-A f2b-ldaps-connections -j RETURN\n",
+  "regex": "\nRunning tests\n=============\n\nUse   failregex filter file : ldaps-connections, basedir: /etc/fail2ban\nUse         log file : /var/log/nginx/ldaps.log\nUse         encoding : utf-8\n\n\nResults\n=======\n\nFailregex: 43 total\n|-  #) [# of hits] regular expression\n|   1) [43] ^<HOST>\\s+\\[[^\\]]*\\]\\s+\\d{3}\\s+[\\d.]+$\n`-\n\nIgnoreregex: 0 total\n\nDate template hits:\n|- [# of hits] date format\n|  [43] Day(?P<_sep>[-/])MON(?P=_sep)ExYear[ :]?24hour:Minute:Second(?:\\.Microseconds)?(?: Zone offset)?\n`-\n\nLines: 43 lines, 0 ignored, 43 matched, 0 missed\n[processed in 0.01 sec]\n\n",
+  "observer_verified": true
+}

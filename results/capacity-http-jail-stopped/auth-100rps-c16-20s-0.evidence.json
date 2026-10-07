@@ -1,0 +1,18 @@
+{
+  "jail_stopped": true,
+  "observer_status": "200",
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 7858,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-07T02:33:12.281947955Z",
+    "FinishedAt": "2026-10-07T02:33:11.779498916Z"
+  },
+  "stats": "{\"BlockIO\":\"11.3MB / 193kB\",\"CPUPerc\":\"0.02%\",\"Container\":\"ldap-keycloak-oauth2-lab-auth-gateway-1\",\"ID\":\"2a03a0115c68\",\"MemPerc\":\"0.41%\",\"MemUsage\":\"30.95MiB / 7.332GiB\",\"Name\":\"ldap-keycloak-oauth2-lab-auth-gateway-1\",\"NetIO\":\"29.8MB / 30.3MB\",\"PIDs\":\"25\"}\n"
+}

@@ -1,0 +1,3 @@
+/dashboard-frontend-frontend-1 image=sha256:68b13b273d6d782ad9ba56620d57c0bc56ca65e2d44de80314b66fe2bef38b97 restarts=0 running=true
+/dashboard-backend-backend-1 image=sha256:49ec828278d5fc20b7a644c93a75c0dc8f487614a99fc71c0b94a3864e18cdd7 restarts=0 running=true
+/ldap-keycloak-oauth2-lab-auth-gateway-1 image=sha256:8400efc343019ac3d2de4dca656368185c44ee30e467c1e1d4115943bb828ebd restarts=0 running=true

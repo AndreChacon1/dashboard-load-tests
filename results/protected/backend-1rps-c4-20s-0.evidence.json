@@ -1,0 +1,18 @@
+{
+  "before": {
+    "jail": "Status for the jail: http-flood\n|- Filter\n|  |- Currently failed:\t0\n|  |- Total failed:\t1\n|  `- File list:\t/var/log/nginx/access.log\n`- Actions\n   |- Currently banned:\t0\n   |- Total banned:\t0\n   `- Banned IP list:\t\n",
+    "firewall": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n",
+    "running": true,
+    "started_at": "2026-10-07T02:30:13.700149412Z",
+    "restart_count": 0,
+    "observer_status": "200"
+  },
+  "after": {
+    "jail": "Status for the jail: http-flood\n|- Filter\n|  |- Currently failed:\t1\n|  |- Total failed:\t22\n|  `- File list:\t/var/log/nginx/access.log\n`- Actions\n   |- Currently banned:\t0\n   |- Total banned:\t0\n   `- Banned IP list:\t\n",
+    "firewall": "-P INPUT ACCEPT\n-P FORWARD ACCEPT\n-P OUTPUT ACCEPT\n",
+    "running": true,
+    "started_at": "2026-10-07T02:30:13.700149412Z",
+    "restart_count": 0,
+    "observer_status": "200"
+  }
+}

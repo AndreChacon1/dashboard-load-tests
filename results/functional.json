@@ -1,0 +1,7 @@
+{
+  "frontend_build_served": true,
+  "unauthenticated_api_rejected": true,
+  "cors_preflight": true,
+  "ldap_login_issues_jwt": true,
+  "authenticated_api_accepted": true
+}

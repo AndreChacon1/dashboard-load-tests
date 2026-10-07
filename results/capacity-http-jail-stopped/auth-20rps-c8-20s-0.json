@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-10-07T02:48:49.492269+00:00",
+  "host": "127.0.0.1",
+  "resolved_ip": "127.0.0.1",
+  "port": 8081,
+  "path": "/realms/cybersecurity/.well-known/openid-configuration",
+  "duration": 20,
+  "concurrency": 8,
+  "requested_rps": 20,
+  "elapsed_seconds": 20.014999999999873,
+  "total": 399,
+  "successful": 399,
+  "status_counts": {
+    "200": 399
+  },
+  "achieved_rps": 19.93504871346503,
+  "success_percent": 100.0,
+  "p95_ms": 16.000000000076398,
+  "interrupted": false
+}

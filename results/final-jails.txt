@@ -1,0 +1,36 @@
+Status for the jail: http-flood
+|- Filter
+|  |- Currently failed:	1
+|  |- Total failed:	3573
+|  `- File list:	/var/log/nginx/access.log
+`- Actions
+   |- Currently banned:	0
+   |- Total banned:	1
+   `- Banned IP list:	
+Status for the jail: http-flood
+|- Filter
+|  |- Currently failed:	1
+|  |- Total failed:	3693
+|  `- File list:	/var/log/nginx/access.log
+`- Actions
+   |- Currently banned:	0
+   |- Total banned:	1
+   `- Banned IP list:	
+Status for the jail: http-flood
+|- Filter
+|  |- Currently failed:	0
+|  |- Total failed:	3669
+|  `- File list:	/var/log/nginx/access.log
+`- Actions
+   |- Currently banned:	0
+   |- Total banned:	1
+   `- Banned IP list:	
+Status for the jail: ldaps-connections
+|- Filter
+|  |- Currently failed:	0
+|  |- Total failed:	42
+|  `- File list:	/var/log/nginx/ldaps.log
+`- Actions
+   |- Currently banned:	0
+   |- Total banned:	1
+   `- Banned IP list:	
